@@ -1,6 +1,9 @@
 # razer clone (2-razer-clone)
-
 practice frontend development
+
+# visit the app
+https://razer-clone.web.app
+
 
 ## Install the dependencies
 ```bash
