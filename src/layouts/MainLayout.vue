@@ -73,7 +73,16 @@
 
 
       </q-toolbar>
+
+      <q-bar dark class=" bg-grey-8 text-white">
+        <div class="col text-center text-grey-5">
+          Toutes les commandes d'un montant supérieur à 59€ bénéficient d'une livraison gratuite en France.
+        </div>
+      </q-bar>
+
     </q-header>
+
+
 
     <q-page-container>
       <router-view />
