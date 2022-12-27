@@ -8,33 +8,16 @@
       </div>
     </q-toolbar>
 
-    <q-img
-      src="blade-14-2022-thumbnail.jpeg"
-      :ratio="16/9"
-      fit="cover"
-      height="600px"
-      class="flex flex-center"
-    >
 
-      <div class="row bg-transparent full-width">
-        <div class="text-center text-grey-1 text-h2 text-weight-bolder col-12 full-width q-mt-lg">RAZER BLADE</div>
-        <div class="text-grey text-center col-12 text-h5 q-my-xs">TOUTE NOUVELLE VERSION. JOUER AU TOP.</div>
-        <div class="flex full-width flex-center text-h6">
-
-          <q-btn class="hover-underline-animation q-mr-xl text-grey-3" flat >
-            <div>En Savoir Plus</div>
-            <q-icon size="15px" class="text-green q-ml-xs" name="fa-solid fa-chevron-right" />
-          </q-btn>
-
-          <q-btn class="hover-underline-animation text-grey-3" flat>
-            <div>Acheter</div>
-            <q-icon size="15px" class="text-green q-ml-xs" name="fa-solid fa-chevron-right" />
-          </q-btn>
-
-        </div>
-      </div>
-
-    </q-img>
+    <ImageDeLaPub
+      v-for="(image, i) in MesImages"
+      :key="i"
+      :source="image.source"
+      :grandTitre="image.grandTitre"
+      :sousTitre="image.sousTitre"
+      :titreBouton1="image.titreBouton1"
+      :titreBouton2="image.titreBouton2"
+    ></ImageDeLaPub>
 
 
 
@@ -43,6 +26,31 @@
 </template>
 
 <script setup>
+  import ImageDeLaPub from '../components/ImageDeLaPub.vue'
+
+  const MesImages = [
+    {
+      source: 'blade-14-2022-thumbnail.jpeg',
+      grandTitre: 'RAZER BLADE 14',
+      sousTitre: 'TOUTE NOUVELLE VERSION. JOUER AU TOP',
+      titreBouton1: 'En Savoir Plus',
+      titreBouton2: 'Acheter',
+    },
+    {
+      source: 'razer-blade-15-homepage-desktop-2022-oled.jpeg',
+      grandTitre: 'RAZER BLADE 15',
+      sousTitre: 'PUISSANCE.PERFORMANCE.PERFECTION.',
+      titreBouton1: 'En Savoir Plus',
+      titreBouton2: 'Acheter',
+    },
+    {
+      source: 'razer-kraken-kitty-v2-pro--homepage-desktop.jpeg',
+      grandTitre: 'RAZER KRAKEN KITTY V2 PRO',
+      sousTitre: 'VOUS ÊTES FELINS POUR L\'AUTRE.',
+      titreBouton1: 'En Savoir Plus',
+      titreBouton2: 'Acheter',
+    },
+  ]
 
 </script>
 
@@ -50,29 +58,6 @@
 
   .q-toolbar{
     min-height: 30px !important;
-  }
-
-  .q-btn--flat {
-    display: inline-block !important;
-    position: relative !important;
-  }
-
-  .q-btn--flat::after {
-    content: '' !important;
-    position: absolute !important;
-    width: 100% !important;
-    transform: scaleX(0) !important;
-    height: 2px !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    background-color: green !important;
-    transform-origin: bottom right !important;
-    transition: transform 0.25s ease-out !important;
-  }
-
-  .q-btn--flat:hover::after {
-    transform: scaleX(1) !important;
-    transform-origin: bottom left !important;
   }
 
 
