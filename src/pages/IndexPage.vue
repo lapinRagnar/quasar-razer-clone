@@ -9,7 +9,7 @@
     </q-toolbar>
 
 
-    <ImageDeLaPub
+    <ImageUneColonne
       v-for="(image, i) in MesImages"
       :key="i"
       :source="image.source"
@@ -17,7 +17,8 @@
       :sousTitre="image.sousTitre"
       :titreBouton1="image.titreBouton1"
       :titreBouton2="image.titreBouton2"
-    ></ImageDeLaPub>
+      class="q-mb-md"
+    ></ImageUneColonne>
 
 
 
@@ -26,7 +27,7 @@
 </template>
 
 <script setup>
-  import ImageDeLaPub from '../components/ImageDeLaPub.vue'
+  import ImageUneColonne from '../components/ImageUneColonne.vue'
 
   const MesImages = [
     {
