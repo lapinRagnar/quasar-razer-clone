@@ -36,6 +36,7 @@
 
     <Footer />
 
+
   </q-page>
 
 </template>
@@ -43,7 +44,7 @@
 <script setup>
   import ImageUneColonne from '../components/ImageUneColonne.vue'
   import ImageDeuxColonnes from '../components/ImageDeuxColonnes.vue'
-  import Footer from '../components/Footer.vue';
+  import Footer from '../components/Footer.vue'
 
   const MesImagesUneColonne = [
     {
@@ -119,6 +120,8 @@
   .q-toolbar{
     min-height: 30px !important;
   }
+
+
 
 
 </style>

@@ -100,9 +100,7 @@
     padding-right: 120px;
   }
 
-  .le_footer {
-    background-color: #222;
-  }
+
 
   .souligner_sur_hover {
     text-decoration: none !important;

@@ -9,9 +9,9 @@
   >
 
     <div class="row bg-transparent full-width">
-      <div class="text-center text-grey-1 text-h2 text-weight-bolder col-12 full-width q-mt-lg">{{grandTitre}}</div>
-      <div class="text-grey text-center col-12 text-h5 q-my-xs"> {{ sousTitre }}</div>
-      <div class="flex full-width flex-center text-h6">
+      <div class="text-center text-grey-1 text-h4 text-weight-bolder col-12 full-width q-mt-lg">{{grandTitre}}</div>
+      <div class="text-grey text-center col-12 text-h6 q-my-xs"> {{ sousTitre }}</div>
+      <div class="flex full-width flex-center text-subtitle1">
 
         <q-btn class="hover-underline-animation q-mr-xl text-grey-3" flat >
           <div>{{titreBouton1}}</div>

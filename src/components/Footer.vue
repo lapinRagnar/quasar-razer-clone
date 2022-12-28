@@ -1,6 +1,6 @@
 <template>
 
-<q-footer class="le_footer text-white" reveal height-hint="30">
+<q-toolbar class="le_footer text-white">
 
   <div class="row q-mt-xl conteneur">
 
@@ -106,7 +106,7 @@
 
 
   </div>
-</q-footer>
+</q-toolbar>
 
 </template>
 
@@ -119,14 +119,18 @@ export default {
 <style lang="scss">
 
   .conteneur {
-    display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: center;
+    width: 100%;
   }
 
   .conteneur-icon-footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  .le_footer {
+    background-color: #222;
   }
 </style>
