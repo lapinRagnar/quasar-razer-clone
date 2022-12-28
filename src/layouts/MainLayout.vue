@@ -82,16 +82,7 @@
       <router-view />
     </q-page-container>
 
-    <q-footer elevated class="bg-grey-8 text-white">
-      <q-toolbar>
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-          </q-avatar>
-          <div>Title</div>
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-footer>
+
 
   </q-layout>
 
@@ -108,6 +99,16 @@
     padding-left: 120px;
     padding-right: 120px;
   }
+
+  .le_footer {
+    background-color: #222;
+  }
+
+  .souligner_sur_hover {
+    text-decoration: none !important;
+  }
+
+
 
 
 </style>

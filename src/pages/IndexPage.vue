@@ -34,6 +34,8 @@
 
     </div>
 
+    <Footer />
+
   </q-page>
 
 </template>
@@ -41,6 +43,7 @@
 <script setup>
   import ImageUneColonne from '../components/ImageUneColonne.vue'
   import ImageDeuxColonnes from '../components/ImageDeuxColonnes.vue'
+  import Footer from '../components/Footer.vue';
 
   const MesImagesUneColonne = [
     {
