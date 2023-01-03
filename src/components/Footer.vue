@@ -104,18 +104,36 @@
       </div>
     </div>
 
+  </div>
+
+  <q-separator class="separer q-mt-xl q-mb-sm" color="orange" dark="false" size="1px" style="width: 300px;" />
+
+  <div class="flex content-between">
+
+    <div class="text-caption text-grey">Copyright © 2022 Razer Inc. All rights reserved.</div>
+    <div class="text-caption text-grey">
+      Informations Légales
+    </div>
+    <div class="text-caption text-grey">
+      Politique De Confidentialité
+    </div>
+    <div class="text-caption text-grey">
+      Politique d'utilisation des Cookies
+    </div>
+    <div class="text-caption text-grey">
+      France  |  Changer de pays >
+    </div>
 
   </div>
+
 </q-toolbar>
 
 </template>
 
 
-<script>
-export default {
-
-}
+<script setup>
 </script>
+
 <style lang="scss">
 
   .conteneur {
@@ -132,5 +150,19 @@ export default {
 
   .le_footer {
     background-color: #222;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .separer {
+    color: orangered !important;
+  }
+
+  .text-separator, .bg-separator, .text-dark-separator, .bg-dark-separator {
+    color: orangered !important;
+  }
+
+  hr.q-separator.q-separator--horizontal.bg-orange.q-separator--dark.separer {
+    color: red !important;
   }
 </style>
